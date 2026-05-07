@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb24dff-3a29-4816-8f5e-757ced2abc26" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/produto_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/produto_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/estoque.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/database/estoque.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/funcionario.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/database/funcionario.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/produtos.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/database/produtos.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/DAO/produtos_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DAO/produtos_dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/produto_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/produto_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/erros/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/erros/erroValue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/valueObjects/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/valueObjects/valor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
