@@ -1,15 +1,26 @@
 [
     {
+        "id": 1,
+        "nome": "arroz",
+        "marca": "jojo",
+        "valor": "28"
+    },
+    {
         "id": 2,
         "nome": "arroz",
-        "valor": 28,
-        "id_fornecedor": 1
+        "marca": "silva",
+        "valor": "10"
     },
     {
         "id": 3,
-        "nome": "Feijão",
-        "marca": "Jeremias",
-        "id_fornecedor": 1,
-        "valor": 10
+        "nome": "arroz",
+        "marca": "silva",
+        "valor": "30"
+    },
+    {
+        "id": 4,
+        "nome": "feijão",
+        "marca": "rtd",
+        "valor": "28"
     }
 ]

@@ -8,9 +8,18 @@ class ProdutoView(View):
         self.marcaProduto=TextField(label="Marca", icon=CupertinoIcons.CUBE_BOX_FILL,col=7)
         self.valorProduto=TextField(label="Valor",prefix="R$",col=3)
         self.btnCadastrarProduto=Button("Add Produto",icon=CupertinoIcons.PLUS,col=3)
-        self.nomeFornecedor=TextField(label="Nome Fornecedor", icon=CupertinoIcons.CUBE_BOX_FILL,col=7)
-        self.btnCadastrarFornecedor = Button("Add Fornecedor", icon=CupertinoIcons.PLUS, col=3)
         self.route="/"
+
+        self.tabelaProduto=DataTable(
+                columns=[
+                    DataColumn(label=Text("id")),
+                    DataColumn(label=Text("Nome")),
+                    DataColumn(label=Text("Marca")),
+                    DataColumn(label=Text("Valor R$"))
+                ],
+                col=12
+            )
+
 
     def build(self):
         modalProduto=Container(
@@ -30,34 +39,25 @@ class ProdutoView(View):
                     )
                 ]
             ),
-            col={"sm":12,"md":6},
+            col=12,
             border=Border.all(4,"#E9EEF6"),
             padding=10,
             height=150
         )
 
-        modalFornecedor = Container(
-            content=Column(
-                controls=[
-                    ResponsiveRow(
-                        controls=[
-                            self.nomeFornecedor, self.btnCadastrarFornecedor
-                        ],
-                        alignment=MainAxisAlignment.SPACE_AROUND
-                    )
-
-                ]
+        modalTabela=Container(
+            content=ResponsiveRow(
+                controls=[self.tabelaProduto],
+                alignment=MainAxisAlignment.CENTER
             ),
-            col={"sm": 12, "md": 6},
-            border=Border.all(4, "#E9EEF6"),
-            padding=10,
-            height=150
+            padding=Padding(10,20,10,20)
         )
 
-        self.controls=[
-            ResponsiveRow(
-                controls=[modalProduto,modalFornecedor],
-                alignment=MainAxisAlignment.CENTER
+
+
+        self.controls=[Column(
+            controls=[modalProduto,modalTabela]
             )
+
         ]
         return self.controls
