@@ -1,11 +1,10 @@
 
 class Produto:
 
-    def __init__(self,id_produto:int,nome:str,marca:str,id_fornecedor:int,valor:float=None):
+    def __init__(self,id_produto:int,nome:str,marca:str,valor:float=None):
         self.__id_produto=id_produto
         self.__nome=nome
         self.__marca=marca
-        self.__id_fornecedor = id_fornecedor
         self.__valor=valor
 
     @property
@@ -28,9 +27,6 @@ class Produto:
     def id_produto(self):
         return self.__id_produto
 
-    @property
-    def id_fornecedor(self):
-        return self.__id_fornecedor
 
     def __eq__(self, other):
         return self.__id_produto==other.id_produto
@@ -40,7 +36,6 @@ class Produto:
             "id":self.__id_produto,
             "nome":self.__nome,
             "marca":self.__marca,
-            "id_fornecedor":self.__id_fornecedor,
             "valor":self.__valor
         }
 
@@ -50,6 +45,5 @@ class Produto:
             data["id"],
             data["nome"],
             data["marca"],
-            data["id_fornecedor"],
             data["valor"]
         )

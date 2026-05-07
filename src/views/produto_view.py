@@ -5,7 +5,7 @@ class ProdutoView(View):
     def __init__(self):
         super().__init__()
         self.nomeProduto=TextField(label="Nome",icon=Icons.PERSON,col=7)
-        self.marcaProduto=TextField(label="Nome", icon=CupertinoIcons.CUBE_BOX_FILL,col=7)
+        self.marcaProduto=TextField(label="Marca", icon=CupertinoIcons.CUBE_BOX_FILL,col=7)
         self.valorProduto=TextField(label="Valor",prefix="R$",col=3)
         self.btnCadastrarProduto=Button("Add Produto",icon=CupertinoIcons.PLUS,col=3)
         self.nomeFornecedor=TextField(label="Nome Fornecedor", icon=CupertinoIcons.CUBE_BOX_FILL,col=7)
