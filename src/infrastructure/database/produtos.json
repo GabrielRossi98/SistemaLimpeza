@@ -1,0 +1,15 @@
+[
+    {
+        "id": 2,
+        "nome": "arroz",
+        "valor": 28,
+        "id_fornecedor": 1
+    },
+    {
+        "id": 3,
+        "nome": "Feijão",
+        "marca": "Jeremias",
+        "id_fornecedor": 1,
+        "valor": 10
+    }
+]
